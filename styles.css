@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-html {
-    /* overflow: hidden; */
-}
-
 body {
     height: 100%;
     width: 100%;
@@ -21,6 +17,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    color: white;
 }
 
 .container {
@@ -31,16 +28,19 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(203, 203, 252, 0.95);
+    background-color: rgba(43, 43, 49, 0.842);
 }
 
 .container h1 {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 0;
     width: max-content;
     height: max-content;
-    padding: 10px;
+    padding: 2px;
+    border-bottom: 0.5px solid white;
+    /* text-decoration: underline;
+    text-underline-offset: 10px; */
 }
 
 .img-container {
@@ -60,6 +60,7 @@ body {
 .container p {
     padding-bottom: 20px;
     font-weight: 600;
+    line-height: 20px;
 }
 
 .first-p {
@@ -75,13 +76,18 @@ body {
     padding: 5px;
     width: max-content;
     align-self: center;
-    background-color: yellow;
+    background-color: rgb(233, 233, 0);
     border: none;
     font-size: 1rem;
     font-weight: bold;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-btn:hover {
+    background-color: white;
 }
 
 .i-frame {
@@ -98,7 +104,7 @@ body {
     body {
         align-items: center;
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 40px;
         gap: 10px;
     }
     .i-frame{
@@ -112,6 +118,7 @@ body {
     body {
         background-size: cover;
         padding-top: 0px;
+        overflow: hidden;
     }
     .container {
         width: 100%;
@@ -133,6 +140,7 @@ body {
     .container h1 {
         position: relative;
         align-self: center;
+        margin-bottom: 10px;
     }
     .i-frame {
         display: none;
