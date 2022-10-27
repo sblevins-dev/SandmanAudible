@@ -1,0 +1,140 @@
+* {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* overflow: hidden; */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/pexels-philippe-donn-1169754\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: max-content;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(203, 203, 252, 0.95);
+}
+
+.container h1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+}
+
+.img-container {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.img-container a img {
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.container p {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.first-p {
+    padding-top: 120px;
+}
+
+.link-btn-container {
+    text-align: center;
+}
+
+.link-btn {
+    height: max-content;
+    padding: 5px;
+    width: max-content;
+    align-self: center;
+    background-color: yellow;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.i-frame {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: max-content;
+    height: 250px;
+}
+
+
+
+@media (max-width: 1250px) {
+    body {
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    .i-frame{
+        position: relative;
+        top:0;
+        left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-size: cover;
+        padding-top: 0px;
+    }
+    .container {
+        width: 100%;
+    }
+    .img-container {
+        padding-top: 5px;
+        position: relative;
+        top: 0;
+        left: 0;
+        align-self: center;
+    }
+    .container p {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .first-p {
+        padding-top: 5px;
+    }
+    .container h1 {
+        position: relative;
+        align-self: center;
+    }
+    .i-frame {
+        display: none;
+    }
+}
